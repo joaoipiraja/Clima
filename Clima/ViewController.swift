@@ -7,15 +7,48 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
     
+    @IBOutlet weak var imgviewCondition: UIImageView!
+    @IBOutlet weak var lblTemperature: UILabel!
+    @IBOutlet weak var lblCity: UILabel!
     
+    @IBOutlet weak var txtSearch: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        txtSearch.delegate = self //txtSearch will notify the View controller
+        
+    }
+    
+    @IBAction func searchClicked(_ sender: Any) {
+        txtSearch.endEditing(true) //dimiss the keyboard
+        print(txtSearch.text!)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print(textField.text!)
+        textField.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField.text != ""{
+            return true
+        }else{
+            textField.placeholder = "Try Something"
+            return false
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        //
+        textField.text = ""
+        textField.placeholder = "Search"
+        
     }
 
 
