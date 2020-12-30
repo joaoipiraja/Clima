@@ -15,7 +15,7 @@ protocol WeatherManagerDelegate {
 
 class WeatherManager{
     private let weatherURL = "https://api.openweathermap.org/data/2.5/weather"
-    private let appId:String = "946a1658eb62e222a685120b15a9225f"
+    private let appId:String = ""
     private let unit:String = "metric"
     var delegate:WeatherManagerDelegate?
     
