@@ -15,6 +15,9 @@
 		4EB195DB259A5E2500F948C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB195D9259A5E2500F948C1 /* LaunchScreen.storyboard */; };
 		4EB195E6259A5E2500F948C1 /* ClimaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB195E5259A5E2500F948C1 /* ClimaTests.swift */; };
 		4EB195F1259A5E2500F948C1 /* ClimaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB195F0259A5E2500F948C1 /* ClimaUITests.swift */; };
+		4EB1961E259BC95C00F948C1 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB1961D259BC95C00F948C1 /* WeatherManager.swift */; };
+		4EB19637259BEA6500F948C1 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB19636259BEA6500F948C1 /* WeatherData.swift */; };
+		4EB1963D259BFB0000F948C1 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB1963C259BFB0000F948C1 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		4EB195EC259A5E2500F948C1 /* ClimaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB195F0259A5E2500F948C1 /* ClimaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaUITests.swift; sourceTree = "<group>"; };
 		4EB195F2259A5E2500F948C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EB1961D259BC95C00F948C1 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		4EB19636259BEA6500F948C1 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		4EB1963C259BFB0000F948C1 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,11 @@
 		4EB195CD259A5E2100F948C1 /* Clima */ = {
 			isa = PBXGroup;
 			children = (
+				4EB19619259BC92E00F948C1 /* Controller */,
+				4EB19618259BC91C00F948C1 /* View */,
+				4EB19617259BC91200F948C1 /* Model */,
 				4EB195CE259A5E2100F948C1 /* AppDelegate.swift */,
 				4EB195D0259A5E2100F948C1 /* SceneDelegate.swift */,
-				4EB195D2259A5E2100F948C1 /* ViewController.swift */,
-				4EB195D4259A5E2100F948C1 /* Main.storyboard */,
 				4EB195D7259A5E2500F948C1 /* Assets.xcassets */,
 				4EB195D9259A5E2500F948C1 /* LaunchScreen.storyboard */,
 				4EB195DC259A5E2500F948C1 /* Info.plist */,
@@ -126,6 +133,32 @@
 				4EB195F2259A5E2500F948C1 /* Info.plist */,
 			);
 			path = ClimaUITests;
+			sourceTree = "<group>";
+		};
+		4EB19617259BC91200F948C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4EB1961D259BC95C00F948C1 /* WeatherManager.swift */,
+				4EB19636259BEA6500F948C1 /* WeatherData.swift */,
+				4EB1963C259BFB0000F948C1 /* WeatherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4EB19618259BC91C00F948C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EB195D4259A5E2100F948C1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EB19619259BC92E00F948C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4EB195D2259A5E2100F948C1 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EB195D3259A5E2100F948C1 /* ViewController.swift in Sources */,
+				4EB19637259BEA6500F948C1 /* WeatherData.swift in Sources */,
 				4EB195CF259A5E2100F948C1 /* AppDelegate.swift in Sources */,
+				4EB1961E259BC95C00F948C1 /* WeatherManager.swift in Sources */,
+				4EB1963D259BFB0000F948C1 /* WeatherModel.swift in Sources */,
 				4EB195D1259A5E2100F948C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
